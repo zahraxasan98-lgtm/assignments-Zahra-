@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karamel Restaurant | Booking</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Book a table at Karamel Restaurant using our online reservation form.">
+    <meta name="author" content="Abdifatah Ali Mohamed">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Karamel</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help / FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <h1>Book a Table</h1>
+        <p>Reserve your table at Karamel Restaurant easily.</p>
+    </section>
+
+    <section>
+        <div class="section-title">
+            <h2>Reservation Form</h2>
+            <p>Please fill the form below</p>
+        </div>
+
+        <form class="form-container" action="#" method="post">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your name" required minlength="3">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="example@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Phone number" required pattern="[0-9]{7,15}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Create password" required minlength="6">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Booking Details</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Time</label>
+                        <input type="time" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select required>
+                        <option value="">Choose</option>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5 People</option>
+                        <option>6+ People</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dining Option</legend>
+
+                <label><input type="radio" name="dine" required> Dine In</label>
+                <label><input type="radio" name="dine"> Takeaway</label>
+                <label><input type="radio" name="dine"> Family Room</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extra Services</legend>
+
+                <label><input type="checkbox"> Birthday Setup</label>
+                <label><input type="checkbox"> Baby Chair</label>
+                <label><input type="checkbox"> Quiet Table</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label>Special Request</label>
+                <textarea rows="5" placeholder="Write here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn">Book Now</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Karamel Restaurant. All rights reserved.</p>
+        <p>Mogadishu City Centre, Somalia</p>
+
+        <p>
+            Follow us:
+            <a href="https://www.facebook.com">whatsapp</a> |
+            <a href="https://www.mobile.com">phone</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

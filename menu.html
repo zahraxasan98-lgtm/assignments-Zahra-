@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karamel Restaurant | Menu</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#fff7f2;
+        color:#333;
+    }
+
+    header{
+        background:#d2691e;
+        color:white;
+        padding:15px;
+        text-align:center;
+    }
+
+    header h1{
+        margin:0;
+        font-size:28px;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        color:white;
+        margin:0 10px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    nav a:hover{
+        text-decoration:underline;
+    }
+
+    .hero{
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero h2{
+        font-size:32px;
+        margin-bottom:5px;
+    }
+
+    .container{
+        width:90%;
+        max-width:1000px;
+        margin:auto;
+    }
+
+    .section-title{
+        text-align:center;
+        margin:30px 0 10px;
+    }
+
+    /* TABLE STYLE */
+    table{
+        width:100%;
+        border-collapse:collapse;
+        background:white;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    th, td{
+        padding:15px;
+        text-align:left;
+    }
+
+    th{
+        background:#d2691e;
+        color:white;
+    }
+
+    tr:nth-child(even){
+        background:#fff3ea;
+    }
+
+    /* CARDS */
+    .cards{
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:20px;
+    }
+
+    .card{
+        background:white;
+        padding:15px;
+        width:250px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        text-align:center;
+    }
+
+    .price{
+        color:#d2691e;
+        font-weight:bold;
+        font-size:18px;
+    }
+
+    footer{
+        background:#333;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Karamel  Restaurant</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Our Delicious Menu</h2>
+    <p>Fresh food • Clean taste • Affordable price</p>
+</div>
+
+<div class="container">
+
+    <h2 class="section-title"> Main Menu Table</h2>
+
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Breakfast</td>
+            <td>Canjeero</td>
+            <td>Soft Somali canjeero with tea</td>
+            <td>$8</td>
+        </tr>
+
+        <tr>
+            <td>Main</td>
+            <td>meat  Rice</td>
+            <td>Grilled meat with rice</td>
+            <td>$15</td>
+        </tr>
+
+        <tr>
+            <td>Main</td>
+            <td> Burger</td>
+            <td>Juice burger</td>
+        
+            <td>$10</td>
+        </tr>
+
+        <tr>
+            <td>Drinks</td>
+            <td>Fresh Juice</td>
+            <td>Natural fruit juice</td>
+            <td>$3</td>
+        </tr>
+    </table>
+
+    <h2 class="section-title">⭐ Special Items</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>meat Rice</h3>
+            <p>Best rice meat</p>
+            <p class="price">$12</p>
+            <h4>juice</h4>
+            <p>Best juice</p>
+            <p class="price">&2</p>
+
+        </div>
+
+        <div class="card">
+            <h3>Burger</h3>
+            <p>fresh burger</p>
+            <p class="price">$8</p>
+        </div>
+
+        <div class="card">
+            <h3>Pizza</h3>
+            <p>Sweat Pizza</p>
+            <p class="price">$10</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Karamel Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karamel Restaurant | Gallery</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#fff7f2;
+    }
+
+    header{
+        background:#d2691e;
+        color:white;
+        padding:15px;
+        text-align:center;
+    }
+
+    header h1{
+        margin:0;
+    }
+
+    nav a{
+        color:white;
+        margin:0 10px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    .hero{
+        text-align:center;
+        padding:30px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    /* GALLERY GRID */
+    .gallery{
+        width:90%;
+        max-width:1000px;
+        margin:auto;
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:15px;
+        padding-bottom:40px;
+    }
+
+    .gallery img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        border-radius:10px;
+        transition:0.3s;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery img:hover{
+        transform:scale(1.05);
+    }
+
+    footer{
+        background:#333;
+        color:white;
+        text-align:center;
+        padding:15px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+        .gallery{
+            grid-template-columns:repeat(2, 1fr);
+        }
+    }
+
+    @media(max-width:500px){
+        .gallery{
+            grid-template-columns:1fr;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Karamel  Restaurant</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Our Food Gallery</h2>
+    <p>Fresh food • Sweet desserts • Best taste</p>
+</div>
+
+<div class="gallery">
+
+    <img src="rice&meat.jpg" alt="" />
+    <img src="Pizza.jpg" alt="" />
+    <img src="begar.jpg" alt="" />
+    <img src="shuwarno.jpg" alt="" />
+    <img src="strawberry.jpg" alt="" />
+    <img src="juice.jpg" alt="" />
+    <img src="canjero.jpg" alt="" />
+
+</div>
+
+<footer>
+    <p>© 2026 Karamel Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
